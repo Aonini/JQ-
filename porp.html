@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="checkbox" id="inp"/>
+    <script src="jquery-3.3.1.js"></script>
+    <script>
+        //这样禁止用选框
+      // $("#inp").prop({checked:true})
+        // $("#inp").click(function(){
+        // //     //这样直接获取状态false 和true
+        // //     //console.log($("#inp").prop("checked"))
+        
+        //  })
+        //input有一个父级是body   条件成立
+        //console.log($("#inp").parent().is("body"))
+        //满足条件的父级 用parents
+        console.log($("#inp").parents("body"))
+        
+   
+    </script>
+</body>
+</html>

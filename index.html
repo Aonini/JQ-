@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="index.css">
+<script src="jquery-3.3.1.js"></script>
+<script src="toos.js"></script>
+<script src="data.js"></script>
+<body>
+    <div id="box">
+        <header>
+            <div class="top_alert">
+                    <div class="header_alert"></div>
+            </div>
+            
+           <div class="right">
+               <span><img src="img/user-ico.jpg"></span>
+               <span><img src="img/jt.jpg"></span>
+               <span></span>
+               <span><img src="img/set.jpg"></span>
+           </div> 
+        </header>
+        <nav id="nav">
+            <ul class="nav_list">
+                <li class="nav_item">
+                    <img src="img/download.png">
+                    <span>下载</span>
+                </li>
+                <li class="nav_item">
+                        <img src="img/fenxiang.png">
+                        <span>分享</span>
+                 </li>
+                 <li class="nav_item yidong">
+                        <img src="img/move.png">
+                        <span>移动到</span>
+                 </li>
+                 <li class="nav_item  roname">
+                        <img src="img/ming.png">
+                        <span>重命名</span>
+                 </li>
+                 <li class="nav_item delet">
+                        <img src="img/delete.png">
+                        <span>删除</span>
+                 </li>
+                 <li class="nav_item  xinjian">
+                        <img src="img/leftfile.png">
+                        <span>新建文件夹</span>
+                 </li>
+                 <li class="nav_item">
+                        <img src="img/refresh.png">
+                 </li>
+            </ul>
+            <div class="nav_right">
+                <div class="nav_right1">
+                     <img src="img/ico_type.jpg">
+                </div>
+                <div class="nav_right_more">
+                        <img src="img/sort_type.png">
+                        <img src="img/jt2.png">
+                        <div class="nav_right_more_more">
+                            <div><img src="">按时间排序</div>
+                            <div><img src="">按字母排序</div>
+                            <div><img src="">显示缩略图</div>
+                        </div>
+                </div>
+            </div>
+        </nav>
+        <section>
+            <div class="content_left">
+              <!--  <ul class="content_left_list"> 
+                     <li>
+                        <img src="img/folder_jt1.png">
+                        <img src="img/s_folder2.png">
+                        <span>微云</span> 
+                         <ul class="content_left_list">
+                                <li>
+                                    <img src="img/folder_jt1.png">
+                                    <img src="img/s_folder2.png">
+                                    <span>js课程</span>
+                                    <ul class="content_left_list">
+                                            <li>
+                                                <img src="img/folder_jt1.png">
+                                                <img src="img/s_folder2.png">
+                                                <span>js课程</span>
+                                             </li>
+                                             <li>
+                                                    <img src="img/folder_jt1.png">
+                                                    <img src="img/s_folder2.png">
+                                                    <span>js课程</span>
+                                                 </li>
+                                                 <li>
+                                                        <img src="img/folder_jt1.png">
+                                                        <img src="img/s_folder2.png">
+                                                        <span>js课程</span>
+                                                         <ul class="content_left_list">
+                                            <li>
+                                                <img src="img/folder_jt1.png">
+                                                <img src="img/s_folder2.png">
+                                                <span>js课程</span>
+                                             </li>
+                                             <li>
+                                                    <img src="img/folder_jt1.png">
+                                                    <img src="img/s_folder2.png">
+                                                    <span>js课程</span>
+                                                 </li>
+                                                 <li>
+                                                        <img src="img/folder_jt1.png">
+                                                        <img src="img/s_folder2.png">
+                                                        <span>js课程</span>
+                                                     </li>
+                                        </ul>
+                                                     </li>
+                                        </ul>
+                                 </li>
+                            </ul>
+                    </li> 
+                 </ul> -->
+            </div>
+            <div class="content_right">
+                   
+                    <nav class="content_right_nav">
+                        <div class="inpteall"></div>
+                       <div class="content_right_nav_div">
+                            <!-- <a href=""></a>
+                            <a href=""></a>
+                            <span class="border_bottom">微云</span>
+                            <img src="img/br_jt.png"> -->
+                         </div>
+                    </nav>
+                    <div class="content_right_div">
+                         <ul class="content_right_div_list">
+                            <!-- <li class="right_div_item">
+                                '<span></span>'
+                                <img src="img/folder-b.png">
+                                <div>js基础课程</div>
+                                <input type="text" placeholder="js基础课程" class="name">
+                            </li> -->
+                        </ul>
+                        <div class="alert_delet">
+                            <div> 确定要删除文件夹吗？</div>
+                            <div>已删除的文件夹可以在回收站找到</div>
+                            <button class="ok">确定</button>
+                            <button class="xiaoshi">取消</button>
+                        </div> 
+                      
+                        <div class="right-img"> </div>
+                    </div>
+            </div>
+     </div>  
+                <div class="alert-position">
+                        <div class="alert-position_title">选择储存位置</div>
+                        <span></span>
+                        <div class="alerttree"></div>
+                        <button  class="oktow">确定</button>
+                        <button  class="suanle">取消</button>
+                        <p class="alert"></p>
+                </div>
+        </section>
+        <div class="mask"></div>
+        <script>
+              
+        // -----------------------------------------上面弹窗的内容  
+             var fullTipBox = $('.top_alert');
+            var tipText = fullTipBox.find('.header_alert')   
+            var WARN="org"
+            var OK="green"
+           //----------------------------------------------------------------左侧树形菜单的渲染
+           var leftDiv= $('.content_left')
+           //初始
+           leftDiv.html(createTreeHtml(-1))
+           var inpteall=document.querySelector('.inpteall')
+          var rightNav= $(".content_right_nav_div")
+                //右面上面导航条 初始
+              rightNav.html(createPathHtml(1))
+                //下面文档区
+               var files=$(".content_right_div_list")
+               //左边点击
+               // 最外面的父级 找到标记的div  渲染背景
+              leftDiv.find('div[custome-id="1"]').css('background','#e1e8ee')
+               
+    //===================这里遇到问题 事件源直接绑给了div  所以导致移动到的时候点击div文件区跟导航条会改变
+                    //这里出了问题  就是没有用事件委托   事件委托后   每一次从新渲染结构都会相当于自动更新  
+                    //不会出现这个共能用不老的情况
+                leftDiv.on("click","li",function(e){
+                   //当前点击的页面上的ID
+                     var id = $(this).find('div').attr('custome-id');
+                    //清空所有的  再找到当前的
+                    leftDiv.find('div').css('background','')
+                    leftDiv.find('div[custome-id='+id+']').css('background','#e1e8ee')
+                   
+                    rightNav.html(createPathHtml(id))
+                   files.html(createFileHtml(id))
+                   $(".inpteall").removeClass("checked")
+
+                   e.stopPropagation();
+                 })
+                     //文档区初始
+              files.html(createFileHtml(1))
+                //文档区文件夹点击
+           
+           //下面文件夹点击的时候
+             //当前点击的包含class的和他父级的长度作比较
+              var bottomBox=$(".content_right_div")
+
+              bottomBox.on("click","li",function (ev){
+                    
+                     //这里唇线错误  找不到id
+                     var id = $(this).attr('custome_id');
+                    //背景颜色
+                      if(ev.target.nodeName == "SPAN"){
+                          //获取有class他父级的ID
+                                 $(ev.target).toggleClass('checked')
+                                 $(ev.target).parent().toggleClass("blue")
+                              // console.log ($(lis).(".checked").attr("custome_id").length) 
+                            //          //下面整个大 的一块从他下面找
+                                if(bottomBox.find(".checked").length==bottomBox.find("li").length ){
+                            //         //上面全选的框控制
+                                    inpteall.classList.add("checked")
+                                }else{
+                                    inpteall.classList.remove("checked")
+
+                                }
+                          //事件源是div的时候改名字    
+                      }else if(ev.target.nodeName == "INPUT"){
+                            return
+                      } else{
+                        rightNav.html(createPathHtml(id))
+                         files.html(createFileHtml(id))
+                      } 
+                        
+                     
+                     
+                     
+                     
+                   
+                    leftDiv.find('div').css('background','')
+                     leftDiv.find('div[custome-id='+id+']').css('background','#e1e8ee')
+                     $("inpteall").removeClass("checked")
+
+                 })
+          
+                
+                //上面全选框点击的时候下面里里面全选
+                $(".inpteall").on("click",function(){ 
+
+
+                     $(this).toggleClass("checked")
+                     //判断身上有没有
+                     var a=$(this).is(".checked")
+                    if(a){
+                        bottomBox.find("li span").addClass("checked")
+                        bottomBox.find(".right_div_item").addClass("blue")
+                     }else{
+                        bottomBox.find("li span").removeClass("checked")
+                        bottomBox.find(".right_div_item").removeClass("blue")
+                     }
+                     if(bottomBox.find("li span").length==0){
+                        $(this).removeClass("checked")
+                     }
+               })
+
+            
+
+
+                //上面NAVER点击时候
+                rightNav.on("click","a",function(e){
+                    $("inpteall").removeClass("checked")
+                     var id = $(this).attr('custome-id');
+                    rightNav.html(createPathHtml(id))
+                    files.html(createFileHtml(id))
+                    leftDiv.find('div').css('background','')
+                    leftDiv.find('div[custome-id='+id+']').css('background','#e1e8ee')
+                    
+                    e.stopPropagation()
+                })
+                $(".nav_right_more").on("click",function(){
+                    $(".nav_right_more_more").css("display","block")
+                })
+            
+
+
+
+              //   右面的文件夹
+              var  bttomRightDiv =document.getElementsByClassName("content_right_div")
+             
+              var lis=bttomRightDiv[0].getElementsByClassName('right_div_item')
+
+           var danxuan=document.getElementsByClassName('danxuan')
+           //=======================================================框选
+          
+
+           bttomRightDiv[0].onmousedown=function(e){
+                if(e.target.nodeName==="INPUT"){
+                        return
+                }
+
+
+                var name=document.querySelector(".name")
+               if(e.target.nodeName=="NAME"){
+                   Console.log(1)
+               }
+              
+            var newDiv = document.createElement('div');
+                newDiv.classList.add('divstyle');
+                
+            // down下去鼠标的位置
+				var downDisX = e.clientX;
+				var downDisY = e.clientY;
+                
+				document.onmousemove = function (e){
+                        //问题   鼠标按下去生成  这时候在插入
+
+
+				newDiv.style.left = downDisX + 'px';
+                newDiv.style.top = downDisY + 'px';
+
+
+                    if(Math.abs(e.clientX-downDisX)<10||Math.abs(e.clientY-downDisY)<10){
+                        return
+                        
+                    }else{
+                        document.body.appendChild(newDiv);
+                                newDiv.style.width = Math.abs(e.clientX - downDisX)	+ 'px';
+                            newDiv.style.height = Math.abs(e.clientY - downDisY)+ 'px';
+                            newDiv.style.left = Math.min(e.clientX,downDisX)	+ 'px';
+                            newDiv.style.top =Math.min(e.clientY , downDisY)	+ 'px';
+
+                   
+                    
+                    if(newDiv.style.width<10||newDiv.style.height<10){
+
+                            return
+                    }else{
+                            // 要和所有的div进行检测
+					for( var i = 0; i < lis.length; i++ ){
+
+                    if(collision(newDiv,lis[i])){
+
+                        danxuan[i].classList.add("checked")
+                        lis[i].classList.add("blue")
+                        
+
+                        if(bottomBox.find(".checked").length==bottomBox.find("li").length){
+                         inpteall.classList.add("checked")
+
+                        }else{
+                            inpteall.classList.remove("checked")
+                        }
+
+                  
+                }else{
+                        danxuan[i].classList.remove("checked")
+                         lis[i].classList.remove("blue")
+                         inpteall.classList.remove("checked")
+                    }
+
+                    }
+            	}
+				}
+                    }
+                    
+					
+
+				document.onmouseup = function (e){
+					document.onmousemove = document.onmouseup = null;
+                    newDiv.remove();
+                }
+
+				e.preventDefault();
+           }
+				
+           //-----------------------------------------------------------------------------------删除元素
+           $(".delet").on("click",function(){
+               //判断一步   ul 里面要还是没有东西就不出现弹框
+               $(".mask").show()
+            var   danxuan=$(".danxuan")
+               // console.log(files.find(".checked").length)
+               if(files.html()===""){
+                tip(WARN,"没有文件可选")
+                $(".mask").hide()
+                    console.log(1)
+               }else if(files.find(".checked").length===0){
+                tip(WARN,"请选择文件")
+               }else{
+                $(".alert_delet").css("display","block")
+               }
+              
+               
+             })
+
+                            
+                 $(".ok").on("click",function(){
+                            $(".mask").hide()
+                            $(".alert_delet").css("display","none")
+                            inpteall.classList.remove("checked")
+                            //问题出在这里
+                             var lanId=bottomBox.find(".checked")
+                           var dangqian= lanId.parent().attr("custome_id")
+                          
+                          
+                          
+
+
+                            //这里面少了一步  要循环的到的项   从里面拿出内一项身上对应的ID
+                            //要要有一步判断  得是身上有ID的元素的长度不等于0
+                            if(lanId.length>0){
+                                var yaoshanchude =[]
+                                lanId.each(function(index,item){
+                                    //要删除的父级的ID变成一个数组
+                                    yaoshanchude.push($(item).parent().attr("custome_id"))    
+                                    //$(item).parent().remove()
+
+                                    })
+                            }
+                            
+                             
+                           var shuzu=getChildsAllByIds(yaoshanchude)  
+                           //比较ID   相同就删掉
+                        for(var i=0;i<shuzu.length;i++){
+                           for(var j=0;j<data.length;j++){
+                               if(shuzu[i].id == data[j].id){
+                                data.splice(j,1)
+                               }
+                           }
+                        }
+                        //从新渲染属性菜单结构
+                        leftDiv.html(createTreeHtml(-1,-1))
+                        //这里更新数据       用的是上面导航条  把到航天的最后一项的ID传进去
+                        //永远只渲染最后一项下面的页面
+                      var zuihouyige =rightNav.find("span").attr("zuihouyixiang")
+                        files.html(createFileHtml(zuihouyige))
+                        
+                        tip(OK,"删除成功")
+                    })
+          
+          
+          //取消键时候
+           $(".xiaoshi").on("click",function(){
+            $(".mask").hide()
+            $(".alert_delet").css("display","none")
+
+          })                          
+  
+          //--------------------------------------------------------------------------------重命名
+          $(".roname").on("click",function(){
+             
+          var   danxuan=bottomBox.find(".checked")
+          var     i=bottomBox.find(".checked").parent().find("i");
+          var  input=bottomBox.find(".checked").parent().find("input");
+          var value = input.val()
+          //如果有
+          if(danxuan.length===1){
+          
+            i.hide()
+           input.show().focus().val(i.text())
+
+            //记录状态  是不是正在改名
+            $(".roname").data('zhuangtai',true)
+
+          }else if(danxuan.length>1){
+                tip(WARN,"不能同时修改多个")
+
+          }else if(danxuan.length<1){
+            tip(WARN,"请选择文件")
+          }
+          })
+
+          
+        
+        
+          $(document).on("click",function(ev){
+           
+              //如果不是在重命名   也就是记录的属性是false  不往下执行
+           if(!$(".roname").data('zhuangtai')){
+               return
+           }
+           //这里出了问题  就是如果不排除事件源    则点击上面的重命名也是在点击document
+           //  则else将会一直执行  上面的两个条件将不会执行
+               //   roname
+           
+           if(ev.target.nodeName=="SPAN"){
+                      return
+           }
+
+
+
+            var     i=bottomBox.find(".checked").parent().find("i");
+            var  input=bottomBox.find(".checked").parent().find("input");
+            var value = input.val()
+            var id=bottomBox.find(".checked").parent().attr("custome_id")
+            
+            
+        //    i.css("display","none") 
+        //    input.css("display","block") 
+        
+
+           if(value===""){
+               tip(WARN,"名字不能为空")
+               i.css("display","block") 
+               input.css("display","none")
+                $(".danxuan").removeClass("checked")
+                //一个唇乳ID   和value值之后 会拿这个value跟所有同级ID名字作比较   返回true 证明已经有了
+           }else if(isExistBrothersNameById(id,value)){
+            tip(WARN,"名字重复")
+			input.hide();
+            i.show();
+            
+
+            }else{
+
+             tip(OK,"命名成功")
+              input.hide();
+              //就是文本value
+              i.show().text(value);
+                      //当前的ID
+                 var self = getItemById(id);
+        //          //当前选中的ID的title
+                self.title = value;
+            $(".danxuan").removeClass("checked")
+            leftDiv.html(createTreeHtml(-1,-1));
+               
+        //        //addStyleBgById(breadNav.    ind('span').attr('current-id'));
+
+
+         }
+        })
+ //-----------------------------------------------------------------------------------新建
+        $(".xinjian").on("click",function(){
+            $(".xinjian").data("jilu",true) 
+            //新生成的结构               传参站位  出了问题下面用jq方法找元素   这里就要用Jq方法生成
+          var   html= $( shengchengfilesHtml({id:"",title:""}))
+          files.prepend(html)
+           //在文件的第一个
+           html.find("i").css("display","none")
+           html.find("input").css("display","block").focus()
+            
+    }) 
+    $(document).on("click",function(e){
+
+        var id=Date.now()
+        if( !$(".xinjian").data("jilu")){
+            return
+        }
+        //排除事件源 跟上面一样
+        if(e.target.nodeName=="LI"||e.target.nodeName=="SPAN"){
+                return
+        }
+        if(e.target.nodeName=="INPUT"){
+                return
+        }
+        //找新生成的元素n 位置在第一 个  找第一个就行
+        var first=files.find(".right_div_item:first")
+        var zhedang= first.find("i")
+        var input=first.find("input")
+        var value=first.find("input").val()
+        
+        //需要一个父级的ID  从下面找传入的value跟当前父级下面的ID有没有重名
+        var  pid=rightNav.find("span").attr("zuihouyixiang")
+
+
+        if(value===""){
+            tip(WARN,"新建文件夹名字不能是空")
+            first.remove()
+        }else if(isExistChildsNameById(pid,value)){
+            tip(WARN,"新建文件夹名字重复")
+            first.remove()
+        }else{
+            tip(OK,"新建成功")
+                    //这里是生成一个数字  添加到数组里 这里面直接生成乐意个对象
+           var    duixiang={
+                    id:id,
+                    pid:pid,
+                    title:value
+               }     
+             data.push(duixiang)  
+             zhedang.html(value)
+             zhedang.css("display","block")
+             input.css("display","none")
+            
+               //把生成的身上的联系外面的ID改一下  这个ID不改渲染上面的nav 会出问题
+               first.attr("custome_id",duixiang.id)  
+               //rightNav.html(createPathHtml(1))
+               leftDiv.html(createTreeHtml(-1,-1))
+        }
+       
+        //
+
+        $(".xinjian").data("jilu",false) 
+    })
+// --------------------------------------------------------------------------------移动到
+var moveTargetId = 1; 
+//            //先渲染出来文件结构
+     $(".yidong").on("click",function(){
+       
+        if(files.find(".checked").length===0){
+            tip(WARN,"请选择要移动对象")
+
+        } else{
+            $(".alert-position").show()
+            $(".mask").show()
+             $(".alerttree").html(createTreeHtml(-1))
+        }
+       
+    })
+  
+   
+    $(".alerttree").on("click","div",function(e){
+
+         //遇到问题  事件冒泡  结构有问题
+         //这是弹框里面的点击的ID
+         
+                //背景色
+                $(".alerttree").find("div").removeClass("bg")
+                $(this).addClass("bg")
+
+
+///在这里判断各种事件条件
+                var id=$(this).attr('custome-id')
+                //左边选中元素身上的div
+                var leftId=files.find(".checked")
+                var kong = [];
+                leftId.each(function (index,item){
+                            kong.push($(item).parent().attr('custome_id'))	
+                        })
+            
+            
+              var allid = getChildsAllByIds(kong).concat(getParentById(kong[0]))
+//要找到要移动的元素的所有子级   父级   然后排除  不可以移动
+                
+                var zhuangtai = false;  // 不在
+                        for( var i = 0; i < allid.length; i++ ){
+                            if(allid[i].id == id){
+                                zhuangtai = true;
+                                break;
+                            }
+                        }
+
+
+
+
+            if(zhuangtai){
+			// 记录不能移动
+			$('.alert').data('isMove',false)
+			$('.alert').text('在自身子孙父级中，不能移动')
+            }else{
+			$('.alert').text('可以')
+			// 记录能移动
+			$('.alert').data('isMove',true)
+		}
+
+		moveTargetId = id;  // 记录目标父级
+               
+               
+
+
+
+           //  console.log($(arr))
+            //这里注意  是要用目标父级跟所有亲戚数组比较
+            // $(arr).each(function(index,item){
+            //     if(item==id){
+            //             console.log(1)
+            //     }
+            // })
+               
+               e.stopPropagation();
+            })
+       
+// 移动需求   不能移动到子级里面  同级可以 上一级可
+
+//需要知道当前点击的ID   当前点击ID的父级   他下面所有子级的ID   左面的树形结构从新渲染  文档区从新渲染   右面的树形渲染  
+        $(".oktow").on("click",function(){
+
+
+            if(!$('.alert').data('isMove')){
+			return;
+        }
+        
+
+
+            //弹框出来的div
+            var  rightDivId =$(".alerttree").find(".bg").attr("custome-id")
+            //左面选中的div
+            var leftId=files.find(".checked").parent().attr("custome_id")
+              //通过ID找到他他的父级数据  插入到当前右面树形菜单下面的子孙里面  先做出一个移动效果
+              //直接把左面点击的id  直接push进当前点击的ID的子级里面
+            //右面树形菜单所有的子级
+          
+           //把要移动的ID的PID变成目标ID    缺一个遮罩层
+           /////////////////    ==================================================上面思路不对
+           if(!isExistChildsNameById(moveTargetId,self.title)){
+				self.pid = +moveTargetId;
+			}else{
+				chong = true;
+				self.title = self.title+'('+Date.now()+')'
+				self.pid = +moveTargetId;
+				//
+            }
+            
+
+
+
+                 
+              var pid= getItemById(leftId).pid
+              var pid = rightDivId
+                //更新一下数据里面的pid
+              getItemById(leftId).pid=pid     
+            leftDiv.html(createTreeHtml(-1,-1))
+            //渲染当前文件夹  是pid上面的
+             files.html(createFileHtml(pid))
+            // //都写死了
+             rightNav.html(createPathHtml(pid))
+             $(".alert-position").hide()
+            $(".mask").hide()
+        })
+
+        //取消
+        $(".suanle").click(function(){
+            $(".alert-position").hide()
+            $(".mask").hide()
+        })
+
+        </script>
+    </div>
+</body>
+</html>

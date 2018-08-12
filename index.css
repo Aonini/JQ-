@@ -1,0 +1,435 @@
+body{
+    margin:0;
+    background:black;
+}
+h1{
+    margin:0px;
+    padding:0px;
+    list-style: none;
+}
+img{
+    vertical-align: top;
+}
+ ul {
+    list-style: none;
+} 
+a{
+    text-decoration: none;
+}
+i{
+    list-style: none;
+    display: block;
+    text-align: center;
+    margin-top:20px;
+}
+#box{
+    height: 710px;
+    width: 1200px;
+    background: #f6f7fb;
+    border-radius: 30px;
+    overflow: hidden;
+    margin:auto;
+}
+header{
+    height: 70px; 
+    background: #ffff url(img/tt.jpg) no-repeat 28px 18px;
+    border-bottom:1px solid #d1d9db;
+    padding-left:200px;
+    position: relative;
+}
+
+
+.top_alert{
+    transition: .5s;
+    position: absolute;
+    top:0px;
+    transition: .01s;
+    margin-left:300px;
+}
+
+.green{
+    background: #87ce8c;
+    border-radius: 30px;
+    color:#ffff;
+    text-align: center;
+    padding:10px;
+}
+.org{
+    background: #f4a763;
+    color:#ffff;
+    text-align: center;
+    border-radius: 30px;
+    padding:10px;
+}
+
+
+header .right{
+   width: 140px;
+   float: right;  
+}
+.right span{
+    float:left;
+}
+.right span:nth-of-type(1){
+    height: 32px;
+    width: 32px;
+    margin-right: 10px;
+    margin-top:20px; 
+}
+.right span:nth-of-type(2){
+    height: 10px;
+    width: 20px;
+    margin-top:35px;
+    margin-right: 6px;
+}
+.right span:nth-of-type(3){
+    height: 24px;
+    width: 1px;
+    background: #e4e5e7;
+    margin-top:24px;
+     margin-right：14px;
+}
+.right span:nth-of-type(4){
+        height: 20px;
+        width:20px;
+        margin-top:28px;
+        margin-left:14px;
+}
+#nav{
+    height: 58px;
+    border-bottom:1px solid #d1d9db;
+    background: #ebf0f4;
+}
+.nav_item{
+    float:left; 
+    height:38px;
+    margin-right: 10px;
+    border-radius:5px;
+    margin-top:10px;
+    border:1px solid #d2d6d9;
+    margin-left:10px;
+    background: #ffffff;
+    font:14px/38px "微软雅黑";
+    color: #76838c; 
+    padding-right: 25px;
+}
+.nav_item img{
+    margin-left:20px;
+    height:16px ;
+    margin-top:10px;
+    margin-right: 18px;
+}
+.blue{
+    border:1px solid #53aedd;
+    color:#53aedd;
+}
+.nav_right{
+    height: 38px;
+    width: 126px;
+    float: right;
+    margin-top:10px;
+    position: relative;
+}
+.nav_right div{
+    float:left;
+    height: 28px;
+    border:1px solid #d1d8de;
+    border-radius: 5px;
+    background: #ffffff;
+    padding-top:10px;
+    padding-left:10px;
+}
+.nav_right1{
+    width: 26px;
+    margin-right: 10px;
+}
+
+.nav_right_more img:nth-of-type(2){
+    margin-left: 8px;
+    margin-top:8px;
+}
+.nav_right_more .nav_right_more_more{
+    height: 108px;
+    width: 130px;
+    border:1px solid #57aedb;
+    background: #ffffff;
+    padding:0px;
+    position: absolute;
+    left:-65px;
+    top:40px;
+    display: none;
+}
+.nav_right_more_more div{
+    height: 24px;
+    width: 120px;
+    border:none;
+}
+.nav_right .nav_right_more{
+    height: 30px;
+    width: 56px;
+    position: absolute;
+    right:10px;
+    z-index: 10;
+}
+section{
+    height: 580px;
+    position: relative;
+}
+.content_left{
+    width: 260px;
+    height: 100%;
+    background: #ffffff;
+    border-right:2px solid #e1e8ee;
+    float: left; 
+    overflow: auto;
+}
+.content_left_list{
+    margin-top:20px;
+}
+.content_left_list li{
+    /* height: 35px; */
+    font-size:14px;
+    color:#67747d;
+    margin-top:10px;
+    text-indent: 30px;
+}
+.content_left_list_ico{
+    /* background: url(img/folder_jt1.png,img/s_folder2.png)   ; */
+    background: url(img/folder_jt1.png) no-repeat 0 5px,url(img/s_folder2.png )no-repeat 9px 2px; 
+}
+
+.content_right{
+    float: left; 
+   overflow: auto;
+}
+.content_right_nav{
+    height: 48px;
+    width: 100%;
+    background: #ffffff;  
+    position: relative;
+}
+.content_right_nav_div{
+    border-bottom: 2px solid #e1e9ec;
+    height: 48px;
+    background: #ffffff;  
+}
+.inpteall{
+    height: 20px;
+    width: 20px;
+    margin-left:15px;
+    float:left;
+    margin-top:15px;
+    position: absolute;
+    border: 1px solid #d4d8d9;
+    border-radius: 3px;
+}
+.content_right_nav a{
+    float:left;
+    margin-left:25px;
+    color:#2c3031;
+    line-height: 48px;
+    padding-left:10px;
+    padding-right: 10px;
+    margin-left:50px;
+}
+.content_right_nav span{
+    float:left;
+    margin-left:25px;
+    color:#2c3031;
+    line-height: 48px;
+    padding-left:10px;
+    padding-right: 10px;
+    margin-left:50px;
+}
+.content_right_nav img{
+    -float: right;
+    margin-left:20px;
+    margin-top:15px;
+}
+.content_right_div{
+    position: relative;
+    width: 938px;
+    height: 480px;
+    overflow: auto;
+}
+.content_right_div_list{
+    padding:0px;
+    list-style:none;
+    overflow: hidden;
+}
+.right_div_item{
+    height: 178px;
+    width: 178px;
+    background:#ffffff;
+    margin-top:40px;
+    margin-left:40px;
+    border-radius: 10px;
+    color:#55addb;
+   float:left;
+   display: inline-block;
+    margin-right: 10px;
+    border:1px solid transparent;
+}
+.content_right_div ul li img{
+    margin-top:34px;
+    margin-left:50px;
+}
+.right_div_item .name{
+    margin-left:30px;
+    width: 119px;
+    border-radius: 5px;
+    margin-top:10px;
+    outline: none;
+    display: none;
+}
+.right_div_item:hover{
+    background: #e1e8ee;
+    border:1px solid #55addb;
+}
+.item_input{
+    height: 20px;
+    width: 100%;
+
+}
+/* 这里面  最开始的时候span没有边框假装不存在  hover上去的时候才会出现 */
+.right_div_item:hover span{
+
+    border:1px solid #d4d8d9;
+    border-radius: 2px;
+
+}
+.right_div_item div{
+    margin-top:20px;
+    text-align: center;
+}
+.right_div_item span{
+    float: left;
+    height: 15px;
+    width: 15px;
+    margin-left:10px;
+    margin-top:10px;
+    position: absolute;
+}
+   
+
+.right-img{
+    height: 400px;
+    width: 400px;
+    margin-top:100px;
+    margin-left:300px;
+    background: url(img/cover-bg.png) no-repeat;
+    display: none;
+}
+.alert_delet{
+    height: 180px;
+    width: 320px;
+    border:2px solid #1390d2;
+    border-radius: 20px;
+    text-align: center;
+    position: absolute;
+    top:170px;
+    left:10px;
+    background: #ffff;
+   display: none;
+   z-index: 101;
+}
+.alert_delet div:nth-of-type(1){
+    margin-top:26px;
+    font-size: 16px;
+    line-height: 46px;
+}
+.alert_delet div:nth-of-type(2){
+    font-size:12px; 
+}
+.alert_delet button{
+    height: 30px;
+    width: 80px;
+    border: 1px solid #54acdc;
+    margin-top:10px;
+}
+.alert{
+    padding:0px;
+    margin:0px;
+    height: 20px;
+    font-size:20px;
+    line-height: 20px; 
+    color:red;
+}
+.alert-position{
+    height: 420px;
+    width: 410px;
+    border:2px solid #59a5d7;
+    position: absolute;
+    top:400px;
+    left:600px;
+    background: #ffff;
+    border-radius: 20px;
+    display: none;
+    z-index: 101;
+}
+.alert-position_title{
+    height: 40px;
+    font: 20px/40px "微软雅黑";
+    text-indent: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+.alert-position span{
+    display: inline-block;
+    height: 40px;
+    width: 22px;
+    background: url(img/icon_close.png) no-repeat;
+    margin-left:230px;
+    margin-top:10px;
+    vertical-align: top;
+}
+.alerttree{
+    height: 300px;
+    width: 350px;
+    border:1px solid #000;
+    margin-left:30px;
+    overflow: auto;
+}
+.alert-position button:nth-of-type(1) {
+    margin-left:150px;
+    background: #55addb;
+    margin-top:20px;
+    
+}
+.mask{
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,50%);
+    position:absolute;
+    top:0px;
+    left:0px;
+    z-index: 100;
+    display: none;
+}
+
+
+
+
+
+
+/* 下面要添加的样式 */
+.border_bottom{
+    border-bottom:2px solid #55addf;
+}
+.blue{
+    background: #e1e8ee;
+    border:1px solid #55addb;
+}
+.checked{
+    background: url(img/checked.png) no-repeat;
+}
+.divstyle{
+    border:1px solid #67747d;
+    position: absolute;
+    top:0px;
+    left:0px;
+    background: rgba(250,250,250,50%);
+}
+.bg{
+    background: #55addb;
+}
